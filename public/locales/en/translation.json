@@ -1,0 +1,120 @@
+{
+  "title": "Digital Recycling Handbook",
+  "intro": "Simple recycling guide for newcomers in Finland",
+
+  "bio": {
+    "title": "♻️ Bio Waste (Brown Bin)",
+    "alt": "Brown bio waste bin used in Finland",
+    "description": "This bin is for anything that comes from food or nature and can rot or break down naturally.",
+    "examples": [
+      "Fruit and vegetable scraps (e.g., banana peels or onion skins)",
+      "Coffee grounds and paper filters",
+      "Tea bags",
+      "Eggshells",
+      "Food leftovers (no packaging)",
+      "Paper napkins and paper towels",
+      "Small amounts of spoiled food (remove plastic packaging)"
+    ],
+    "tip": "Tip: Use a small paper bag or compostable liner to collect bio waste. Do not use plastic bags.",
+    "credit": "Image: Brown bio waste bin used in Finland (Source: Salpakierto)"
+  },
+
+  "plastic": {
+    "title": "🧴 Plastic Waste",
+    "alt": "Plastic packaging waste like bottles and containers",
+    "description": "Plastic packaging includes clean plastic bottles, containers, and wrappings that are used to protect products.",
+    "examples": [
+      "Clean plastic bottles (e.g., for water, juice, shampoo)",
+      "Plastic tubs and food containers (e.g., yogurt cups)",
+      "Plastic packaging for household items",
+      "Plastic wraps and bags (if clean and empty)",
+      "Caps and lids from plastic bottles or containers",
+      "Foamed plastic trays (e.g., meat packaging)"
+    ],
+    "tip": "Tip: Rinse and flatten plastic containers to save space. Do not include toys or PVC materials.",
+    "credit": "Image: Plastic packaging waste bin in Finland (Source: HSY / Salpakierto)"
+  },
+
+  "mixed": {
+    "title": "🗑️ Mixed Waste",
+    "alt": "Mixed waste bin for non-recyclable household trash",
+    "description": "Mixed waste includes anything that cannot be sorted into recycling bins and is not hazardous.",
+    "examples": [
+      "Dirty packaging (e.g., greasy pizza boxes)",
+      "Vacuum cleaner bags and dust",
+      "Diapers and sanitary items",
+      "Broken ceramics or drinking glasses",
+      "Cigarette butts",
+      "Cat litter and pet waste"
+    ],
+    "tip": "Tip: Always try to recycle first. Only use mixed waste as the last option.",
+    "credit": "Image: Mixed waste bin used in Finland (Source: Salpakierto)"
+  },
+
+  "paper": {
+    "title": "📰 Paper",
+    "alt": "Paper waste like newspapers and magazines",
+    "description": "Paper waste includes clean and dry printed or written paper products.",
+    "examples": [
+      "Newspapers and magazines",
+      "Envelopes (even with plastic windows)",
+      "Brochures and leaflets",
+      "Notebooks and writing paper",
+      "Phone books and catalogs"
+    ],
+    "tip": "Tip: Do not put dirty or wet paper in the paper bin.",
+    "credit": "Image: Paper collection bin (Source: HSY / Finnish recycling authority)"
+  },
+
+  "cardboard": {
+    "title": "📦 Cardboard",
+    "alt": "Flattened cardboard boxes",
+    "description": "Cardboard waste includes clean packaging cardboard and paperboard.",
+    "examples": [
+      "Cereal and snack boxes",
+      "Toilet paper rolls",
+      "Corrugated cardboard (flattened)",
+      "Milk and juice cartons (if clean)",
+      "Shoe boxes"
+    ],
+    "tip": "Tip: Flatten all cardboard to save space. Remove plastic windows or linings.",
+    "credit": "Image: Cardboard waste bin in Finland (Source: HSY / Salpakierto)"
+  },
+
+  "metal": {
+    "title": "🥫 Metal",
+    "alt": "Metal packaging like cans and lids",
+    "description": "Metal waste includes packaging and small household metal items.",
+    "examples": [
+      "Aluminum cans (e.g., soda cans)",
+      "Tin food cans (rinsed)",
+      "Metal lids and caps",
+      "Clean aluminum foil",
+      "Empty aerosol cans"
+    ],
+    "tip": "Tip: Rinse cans and flatten if possible. No batteries or electronics.",
+    "credit": "Image: Metal recycling bin used in Finland (Source: Salpakierto)"
+  },
+
+  "glass": {
+    "title": "🍾 Glass",
+    "alt": "Glass bottles and jars",
+    "description": "Glass packaging includes bottles and jars used for food or drink.",
+    "examples": [
+      "Glass bottles (e.g., wine or juice bottles)",
+      "Glass jars (e.g., for jam or pickles)",
+      "Clear and colored glass accepted",
+      "Caps and lids can be recycled separately"
+    ],
+    "tip": "Tip: Rinse containers. No window glass, mirrors, or ceramics.",
+    "credit": "Image: Glass waste collection bin (Source: Finnish waste management)"
+  },
+
+  "sort": {
+    "label": "Sorting instructions"
+  },
+
+  "footer": {
+    "note": "Learn to recycle and keep Finland clean!"
+  }
+}

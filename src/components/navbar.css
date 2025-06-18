@@ -1,0 +1,24 @@
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #006666;
+	color: white;
+	padding: 0.5rem 1rem;
+}
+
+.navbar-left .nav-link {
+	margin-right: 1rem;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+.navbar-left .nav-link:hover {
+	text-decoration: underline;
+}
+
+.navbar-right {
+	display: flex;
+	align-items: center;
+}
