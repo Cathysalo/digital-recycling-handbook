@@ -1,17 +1,24 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import bioImg from '../assets/bins/bio.png';
+import plasticImg from '../assets/bins/plastic.png';
+import mixedImg from '../assets/bins/mixed.png';
+import paperImg from '../assets/bins/paper.png';
+import cardboardImg from '../assets/bins/cardboard.png';        
+import metalImg from '../assets/bins/metal.png';
+import glassImg from '../assets/bins/glass.png';
 
 export default function Home() {
 	const { t } = useTranslation();
 
 	const sections = [
-		{ to: '/bio', key: 'bio', img: '/assets/bins/bio.png' },
-		{ to: '/plastic', key: 'plastic', img: '/assets/bins/plastic.png' },
-		{ to: '/mixed', key: 'mixed', img: '/assets/bins/mixed.png' },
-		{ to: '/paper', key: 'paper', img: '/assets/bins/paper.png' },
-		{ to: '/cardboard', key: 'cardboard', img: '/assets/bins/cardboard.png' },
-		{ to: '/metal', key: 'metal', img: '/assets/bins/metal.png' },
-		{ to: '/glass', key: 'glass', img: '/assets/bins/glass.png' },
+		{ to: '/bio', key: 'bio', img: bioImg },
+		{ to: '/plastic', key: 'plastic', img: plasticImg },
+		{ to: '/mixed', key: 'mixed', img: mixedImg },
+		{ to: '/paper', key: 'paper', img: paperImg },
+		{ to: '/cardboard', key: 'cardboard', img: cardboardImg },
+		{ to: '/metal', key: 'metal', img: metalImg },
+		{ to: '/glass', key: 'glass', img: glassImg },
 	];
 
 	return (
@@ -23,7 +30,7 @@ export default function Home() {
 
 			<div style={{
 				display: 'grid',
-				gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+				gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
 				gap: '2rem',
 				padding: '2rem'
 			}}>
@@ -31,6 +38,7 @@ export default function Home() {
 					const title = t(`${key}.title`);
 					const desc = t(`${key}.description`);
 					const shortDesc = desc.length > 100 ? desc.substring(0, 97) + '...' : desc;
+
 					return (
 						<Link
 							to={to}
@@ -45,27 +53,26 @@ export default function Home() {
 								transition: 'all 0.3s ease',
 								display: 'flex',
 								flexDirection: 'column',
-								height: 'auto',
-								minHeight: '480px'
+								width: '100%',
+								maxWidth: '360px',
+								margin: '0 auto',
+								minHeight: '520px'
 							}}
 							onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.015)'}
 							onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
 						>
-							<img src={img} alt={title} style={{ width: '100%', height: '180px', objectFit: 'cover' }} />
+							<img
+								src={img}
+								alt={title}
+								style={{
+									width: '100%',
+									height: '220px',
+									objectFit: 'cover',
+									borderTopLeftRadius: '16px',
+									borderTopRightRadius: '16px'
+								}}
+							/>
 							<div style={{ padding: '1.2rem', flexGrow: 1 }}>
-								<span style={{
-									display: 'inline-block',
-									backgroundColor: '#00704A',
-									color: 'white',
-									fontWeight: '600',
-									padding: '0.35rem 0.75rem',
-									borderRadius: '5px',
-									marginBottom: '0.75rem',
-									fontSize: '0.85rem'
-								}}>
-									{t('sort.label')}
-								</span>
-								<p style={{ fontSize: '0.75rem', color: '#999', marginBottom: '0.25rem' }}>28.09.2020</p>
 								<h2 style={{ fontSize: '1.1rem', fontWeight: '600', margin: '0.5rem 0' }}>{title}</h2>
 								<p style={{ fontSize: '0.9rem', color: '#444', lineHeight: '1.4' }}>{shortDesc}</p>
 							</div>
@@ -74,7 +81,7 @@ export default function Home() {
 				})}
 			</div>
 
-			<footer style={{ textAlign: 'center', fontSize: '0.9rem', color: '#80685b', paddingBottom: '2rem' }}>
+			<footer style={{ textAlign: 'center', fontSize: '1.9rem', color: '#80685b', paddingBottom: '2rem' }}>
 				🌍 {t('footer.note') || 'Learn to recycle and keep Finland clean!'}
 			</footer>
 		</div>
